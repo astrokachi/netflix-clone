@@ -4,6 +4,8 @@ import "./Login.css";
 
 function Login() {
 	const [signIn, setSignIn] = useState(false);
+	const [registerUser, setRegisterUser] = useState(null);
+	const [value, setValue] = useState('')
 
 	return (
 		<div className="login">
@@ -13,7 +15,13 @@ function Login() {
 					src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png"
 					alt=""
 				/>
-				<button className="login__button" onClick={() => setSignIn(true)}>
+				<button
+					className="login__button"
+					onClick={() => {
+						setSignIn(true);
+						setRegisterUser(true);
+					}}
+				>
 					Sign In
 				</button>
 			</div>
@@ -22,7 +30,12 @@ function Login() {
 				style={signIn ? { top: "20%" } : { top: "30%" }}
 			>
 				{signIn ? (
-					<Signup />
+					<Signup
+						registerUser={registerUser}
+						setRegisterUser={setRegisterUser}
+						value={value}
+						setValue={setValue}
+					/>
 				) : (
 					<>
 						<h1>Unlimited films, TV programmes and more.</h1>
@@ -34,11 +47,12 @@ function Login() {
 
 						<div className="login__input">
 							<form>
-								<input type="email" placeholder="Email holder" />
+								<input type="email" placeholder="Email holder" value={value} onChange={(e) => setValue(e.target.value)} />
 								<button
 									className="login__getStarted"
 									onClick={() => {
 										setSignIn(true);
+										
 									}}
 								>
 									GET STARTED

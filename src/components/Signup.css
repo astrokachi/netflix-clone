@@ -50,3 +50,11 @@
 	cursor: pointer;
 	text-decoration: underline;
 }
+
+
+.signup__form > h6{
+	color: #e50914;
+	font-weight: 400;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
