@@ -14,12 +14,15 @@
 	display: none;
 }
 
+
 .row__poster {
-	max-height: 100px;
-	object-fit: contain;
+	height: 120px;
+	width: 177.766px;
 	margin-right: 10px;
 	transition: transform 450ms;
 	border-radius: 5px;
+	object-fit: contain;
+	/* background: red */
 }
 
 .row__poster:hover {
@@ -29,8 +32,10 @@
 }
 
 .row__posterLarge {
-	max-height: 250px;
+	height: 250px;
 	border-radius: 20px;
+	width: 166.734px;
+	
 }
 
 .row__posterLarge:hover {
@@ -44,3 +49,4 @@
 	overflow: hidden;
 	max-width: 180px;
 }
+
