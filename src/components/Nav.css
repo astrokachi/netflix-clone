@@ -10,6 +10,7 @@
 	width: 80px;
 	object-fit: contain;
 	padding-left: 20px;
+
 	cursor: pointer;
 }
 
@@ -17,6 +18,7 @@
 	right: 20px;
 	position: fixed;
 	width: 30px;
+	border-radius: 20px;
 	cursor: pointer;
 }
 

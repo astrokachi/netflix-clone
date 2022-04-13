@@ -14,13 +14,12 @@
 	display: none;
 }
 
-
 .row__poster {
-	height: 120px;
+	height: 100px;
 	width: 177.766px;
 	margin-right: 10px;
 	transition: transform 450ms;
-	border-radius: 5px;
+	border-radius: 10px;
 	object-fit: contain;
 	/* background: red */
 }
@@ -33,9 +32,8 @@
 
 .row__posterLarge {
 	height: 250px;
-	border-radius: 20px;
+	border-radius: 20px !important;
 	width: 166.734px;
-	
 }
 
 .row__posterLarge:hover {
@@ -49,4 +47,3 @@
 	overflow: hidden;
 	max-width: 180px;
 }
-

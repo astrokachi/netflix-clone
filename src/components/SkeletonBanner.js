@@ -9,6 +9,8 @@ const SkeletonBanner = () => {
 				<div className="skeleton__content">
 					<div className="skeleton__bannerBlock block1"></div>
 					<div className="skeleton__bannerBlock block2"></div>
+					<div className="skeleton__bannerBlock block2"></div>
+					<div className="skeleton__bannerBlock block3"></div>
 					<div className="skeleton__bannerBlock block3"></div>
 				</div>
 				<div className="skeleton--fadeBottom" />
