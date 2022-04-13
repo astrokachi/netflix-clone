@@ -14,6 +14,7 @@ const SkeletonBanner = () => {
 				</div>
 				<div className="skeleton--fadeBottom" />
 			</div>
+			<div></div>
 		</div>
 	);
 };
