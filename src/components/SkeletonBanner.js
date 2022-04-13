@@ -2,7 +2,6 @@ import React from "react";
 import "./SkeletonBanner.css";
 
 const SkeletonBanner = () => {
-	
 	// const counter = 8;
 	return (
 		<div className="skeleton">
