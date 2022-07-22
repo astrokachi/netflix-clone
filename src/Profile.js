@@ -50,7 +50,7 @@ function Profile() {
 		lineItems: [...items],
 		mode: "subscription",
 		successUrl: `${window.location.origin}/`,
-		cancelUrl: `${window.location.origin}/profile`,
+		cancelUrl: `${window.location.origin}/`,
 	};
 
 	const redirectToCheckOut = async () => {
