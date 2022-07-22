@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Nav.css";
+import img from '../profile.png'
 
 function Nav() {
 	const [show, handleShow] = useState();
@@ -29,7 +30,7 @@ function Nav() {
 				</Link>
 				<Link to={"/profile"}>
 					<img
-						src="https://spng.pngfind.com/pngs/s/16-168465_aws-simple-icons-non-service-specific-user-default.png"
+						src={img}
 						alt=""
 						className="nav__avatar"
 				

@@ -1,0 +1,25 @@
+[debug] [2022-05-13T23:24:12.669Z] ----------------------------------------------------------------------
+[debug] [2022-05-13T23:24:12.672Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js hosting:disable
+[debug] [2022-05-13T23:24:12.672Z] CLI Version:   10.4.0
+[debug] [2022-05-13T23:24:12.672Z] Platform:      win32
+[debug] [2022-05-13T23:24:12.673Z] Node Version:  v14.17.1
+[debug] [2022-05-13T23:24:12.674Z] Time:          Sat May 14 2022 00:24:12 GMT+0100 (West Africa Standard Time)
+[debug] [2022-05-13T23:24:12.674Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-13T23:24:12.708Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-05-13T23:24:13.067Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-13T23:24:13.068Z] > authorizing via signed-in user (astrokachi@gmail.com)
+[debug] [2022-05-13T23:24:13.068Z] [iam] checking project netflix-clone-3d3d3 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-05-13T23:24:13.069Z] > refreshing access token with scopes: []
+[debug] [2022-05-13T23:24:13.070Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-05-13T23:24:14.713Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Fri, 13 May 2022 23:24:14 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-05-13T23:24:15.584Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-clone-3d3d3:testIamPermissions [none]
+[debug] [2022-05-13T23:24:15.585Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-clone-3d3d3:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-05-13T23:24:18.843Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-05-13T23:24:18.844Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2022-05-13T23:24:20.053Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-clone-3d3d3:testIamPermissions 200
+[debug] [2022-05-13T23:24:20.053Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-clone-3d3d3:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-05-13T23:24:20.054Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-3d3d3 [none]
+[debug] [2022-05-13T23:24:27.172Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-3d3d3 200
+[debug] [2022-05-13T23:24:27.172Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-3d3d3 {"projectId":"netflix-clone-3d3d3","projectNumber":"892464800094","displayName":"netflix-clone","name":"projects/netflix-clone-3d3d3","resources":{"hostingSite":"netflix-clone-3d3d3","storageBucket":"netflix-clone-3d3d3.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
