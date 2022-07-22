@@ -19,8 +19,11 @@ function Profile() {
 	const [premiumhover, setPremiumHover] = useState(false);
 	const [stripeError, setStripeError] = useState(null);
 
-	const getStripe = () => {
-		const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_KEY);
+	const getStripe = async () => {
+		const stripePromise = await loadStripe(
+			process.env.REACT_APP_STRIPE_KEY ||
+				"pk_test_51KggMGEactHv9QZFmZc7PkTwPLTU7jk7txvrjsnQiOVCyHLo3Cz5w2mFuKf78SspuqtUs304mgoCRXI1cGQW2x5B0002ZtppQA"
+		);
 		return stripePromise;
 	};
 
